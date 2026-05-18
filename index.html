@@ -18,11 +18,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="v2.css" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23b8ff35'/%3E%3Cpath d='M9 11l4 10 6-14 4 10' stroke='%230a0a0b' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
-    />
+    <link rel="icon" type="image/png" href="assets/paidcreators-icon.png" />
   </head>
   <body>
     <!-- URGENCY BAR -->
@@ -43,12 +39,9 @@
     <!-- NAV -->
     <nav class="nav" aria-label="Primary">
       <div class="container nav__inner">
-        <a href="#" class="brand" aria-label="Vibe Coding Blueprint">
-          <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <rect width="32" height="32" rx="8" fill="var(--color-primary)" />
-            <path d="M9 11l4 10 6-14 4 10" stroke="var(--color-on-primary)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-          <span>vibe-coding<span style="color: var(--color-text-faint)">.blueprint</span></span>
+        <a href="#" class="brand brand--pc" aria-label="PaidCreators">
+          <img src="assets/paidcreators-icon.png" alt="" class="brand__pc-icon" />
+          <span class="brand__pc-text">Paid<span class="brand__pc-text-bold">Creators</span></span>
         </a>
         <div style="display: flex; align-items: center; gap: var(--space-4)">
           <button class="theme-toggle" data-theme-toggle aria-label="Toggle theme">
@@ -403,115 +396,191 @@
     </section>
 
     <!-- ============================================================
-         MECHANISM — The Creator's Blind Spot
+         MECHANISM — The Great Graduation
          ============================================================ -->
-    <section class="mechanism">
-      <div class="container">
-        <div class="mechanism__intro">
-          <span class="section-header__eyebrow">The mechanism</span>
-          <h2 class="mechanism__title">It's not that you're failing as a creator.<br />You have a <em>Creator's Blind Spot.</em></h2>
-          <p class="mechanism__lead">
-            For your entire career as a creator, you've been looking at one half of the market: <strong>selling your knowledge.</strong>
-            Courses. Ebooks. Coaching. Templates. Memberships.
-          </p>
-          <p class="mechanism__lead">
-            The <em>other</em> half of the market — the half that has always been quietly bigger, more durable, and
-            higher-margin — has been invisible to you. Not because you didn't know it existed. Because the price of
-            entry was so high (a developer, an MBA, six figures) you logically <em>filed it away</em> as
-            <em>"not for me."</em>
-          </p>
+    <section class="graduation">
+      <div class="graduation__bg" aria-hidden="true"></div>
+      <div class="container graduation__inner">
+        <div class="grad-badge">
+          <span class="grad-badge__pulse"></span>
+          May 2026 · Creator Economy
         </div>
 
-        <!-- VISUAL: Teach vs Build comparison -->
-        <div class="vs-grid">
-          <div class="vs-card vs-card--bad">
-            <div class="vs-card__tag">What you see</div>
-            <h3 class="vs-card__title">Selling Your Knowledge</h3>
-            <ul class="vs-list" role="list">
-              <li><span class="vs-x">✕</span> Paid <strong>once</strong> per buyer</li>
-              <li><span class="vs-x">✕</span> Refund rate climbs every quarter</li>
-              <li><span class="vs-x">✕</span> Forgotten 3 days after purchase</li>
-              <li><span class="vs-x">✕</span> Every new launch starts at zero</li>
-              <li><span class="vs-x">✕</span> Income stops when you stop</li>
+        <h2 class="grad-title">
+          For the first time in history,<br />
+          creators have <em>graduated.</em>
+        </h2>
+
+        <p class="grad-lead">
+          You no longer have to <strong>convince</strong> people that your PDF is amazing. You no longer have to
+          <strong>convince</strong> people that your training course is worth $497. You no longer have to
+          <strong>convince</strong> people you'll change their life.
+        </p>
+
+        <p class="grad-lead grad-lead--lime">
+          You can now <em>show them a working tool that gets them the result.</em>
+        </p>
+
+        <p class="grad-lead">
+          Not next year. Not in five years when AI &quot;gets there.&quot; <strong>Right now.</strong> Today. This
+          weekend. In the span of a few hours, anyone with knowledge, expertise, or even just a deep interest in
+          something can create and start selling a real software tool that helps people — the kind of thing that, until
+          18 months ago, required a $5,000/month engineer and 6 months of waiting.
+        </p>
+
+        <div class="grad-divider" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+
+        <div class="grad-shift">
+          <div class="grad-shift__col grad-shift__col--old">
+            <div class="grad-shift__tag">The era we're leaving</div>
+            <div class="grad-shift__title">Selling information</div>
+            <ul role="list" class="grad-shift__list">
+              <li>&ldquo;Trust me, this PDF is worth it&rdquo;</li>
+              <li>&ldquo;Watch this 14-module course…&rdquo;</li>
+              <li>&ldquo;You'll learn the framework I used…&rdquo;</li>
+              <li>&ldquo;Read between the lines and apply it…&rdquo;</li>
             </ul>
-            <div class="vs-card__bottom">Revenue model: <strong>linear, one-time</strong></div>
+            <div class="grad-shift__close">Customers <em>have to imagine</em> the result.</div>
           </div>
 
-          <div class="vs-arrow" aria-hidden="true">
+          <div class="grad-shift__arrow" aria-hidden="true">
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M5 12h14M13 6l6 6-6 6" />
             </svg>
           </div>
 
-          <div class="vs-card vs-card--good">
-            <div class="vs-card__tag">What you're missing</div>
-            <h3 class="vs-card__title">Building A Tool</h3>
-            <ul class="vs-list" role="list">
-              <li><span class="vs-check">✓</span> Paid <strong>every month</strong>, forever</li>
-              <li><span class="vs-check">✓</span> Refund rate near zero (they use it daily)</li>
-              <li><span class="vs-check">✓</span> Gets <em>more</em> valuable over time</li>
-              <li><span class="vs-check">✓</span> Every customer compounds the last</li>
-              <li><span class="vs-check">✓</span> Income continues while you sleep</li>
+          <div class="grad-shift__col grad-shift__col--new">
+            <div class="grad-shift__tag grad-shift__tag--lime">The era we just entered</div>
+            <div class="grad-shift__title">Selling tools</div>
+            <ul role="list" class="grad-shift__list">
+              <li>&ldquo;Here. Try the demo.&rdquo;</li>
+              <li>&ldquo;Watch it solve your problem in 8 seconds.&rdquo;</li>
+              <li>&ldquo;Plug in your numbers and see what happens.&rdquo;</li>
+              <li>&ldquo;If it works, you keep using it.&rdquo;</li>
             </ul>
-            <div class="vs-card__bottom">Revenue model: <strong>recurring, compounding</strong></div>
+            <div class="grad-shift__close">Customers <em>see the result</em> before they pay.</div>
           </div>
         </div>
 
-        <div class="mechanism__close">
-          <p>
-            One creator selling a $47 course needs <strong>2,128 sales</strong> to gross $100K.<br />
-            One creator with a $29/mo software tool needs <strong>287 active subscribers.</strong>
-          </p>
-          <p class="mechanism__punch">Same audience. Same effort. <em>13x the leverage.</em></p>
+        <div class="grad-punch">
+          <p>The difference between those two columns is the difference between</p>
+          <p class="grad-punch__big">begging and proving.</p>
+          <p>And tools sell at <em>3–7x</em> the rate of information that teaches the same outcome — with refund
+          rates near zero, because once people are using a tool every day, they don't ever stop.</p>
+        </div>
+
+        <div class="grad-stamp">
+          <div class="grad-stamp__line grad-stamp__line--small">This isn't an upgrade.</div>
+          <div class="grad-stamp__line grad-stamp__line--big">It's an industry change.</div>
+          <div class="grad-stamp__line grad-stamp__line--small">And it's happening, with or without you, this year.</div>
         </div>
       </div>
     </section>
 
     <!-- ============================================================
-         WHAT IS VIBE CODING (simple explanation)
+         "BUT I CAN'T CODE" + LIVE BUILD ANIMATION
          ============================================================ -->
     <section class="explainer">
       <div class="container">
         <div class="section-header">
-          <span class="section-header__eyebrow">"Wait — but I can't code"</span>
-          <h2 class="section-header__title">You don't have to. That's <em>the whole point.</em></h2>
+          <span class="section-header__eyebrow">"But I can't code…"</span>
+          <h2 class="section-header__title">You don't have to. <em>Watch.</em></h2>
           <p class="section-header__sub">
-            Something changed in late 2024 that 99% of creators still haven't realized happened. It has a name:
-            <strong>vibe coding.</strong>
+            Below is exactly what happens when someone with zero technical background builds an app. They type a
+            sentence. The AI does the rest. This is happening live, every day, across thousands of creators — and
+            until 18 months ago, was completely impossible.
           </p>
         </div>
 
-        <div class="explainer__grid">
-          <div class="explainer__then">
-            <div class="explainer__label">Then (2010 – 2024)</div>
-            <h3 class="explainer__title">Building software meant:</h3>
-            <ul role="list" class="explainer__list explainer__list--bad">
-              <li>Learning to code (3+ years)</li>
-              <li>Or hiring a developer ($5,000+/mo)</li>
-              <li>Months of waiting on something to ship</li>
-              <li>Bug fixes that took weeks</li>
-              <li>Total dependence on someone technical</li>
-            </ul>
+        <!-- LIVE BUILD ANIMATION -->
+        <div class="livebuild" aria-label="Animated demo of building an app from a single sentence">
+          <div class="livebuild__chrome">
+            <div class="livebuild__dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="livebuild__url">claude.ai · build mode</div>
+            <div class="livebuild__live-pill"><span class="livebuild__live-dot"></span>LIVE</div>
           </div>
-          <div class="explainer__now">
-            <div class="explainer__label explainer__label--lime">Now (vibe coding era)</div>
-            <h3 class="explainer__title">Building software means:</h3>
-            <ul role="list" class="explainer__list explainer__list--good">
-              <li>Describing what you want, in plain English</li>
-              <li>AI writes the code in real time, while you watch</li>
-              <li>"Make the button green, move it left" — and it does</li>
-              <li>Bug fixes happen in seconds, not weeks</li>
-              <li>You're the founder. The AI is the engineer.</li>
-            </ul>
+
+          <div class="livebuild__body">
+            <!-- LEFT: prompt area -->
+            <div class="livebuild__prompt" aria-hidden="true">
+              <div class="livebuild__prompt-label">YOU TYPE…</div>
+              <div class="livebuild__prompt-bubble">
+                <span class="livebuild__typed"></span><span class="livebuild__cursor"></span>
+              </div>
+              <div class="livebuild__prompt-status">
+                <span class="livebuild__status-dot"></span>
+                <span class="livebuild__status-text">Idle…</span>
+              </div>
+            </div>
+
+            <!-- RIGHT: live app preview -->
+            <div class="livebuild__preview" aria-hidden="true">
+              <div class="livebuild__preview-label">AI BUILDS…</div>
+
+              <!-- Phase 1: blank -->
+              <div class="livebuild__app livebuild__app--phase" data-phase="blank">
+                <div class="livebuild__skeleton"></div>
+                <div class="livebuild__skeleton livebuild__skeleton--short"></div>
+                <div class="livebuild__skeleton livebuild__skeleton--medium"></div>
+              </div>
+
+              <!-- Phase 2: building animation -->
+              <div class="livebuild__app livebuild__app--building" data-phase="building">
+                <div class="livebuild__build-row"><span class="livebuild__check">✓</span> Creating database schema…</div>
+                <div class="livebuild__build-row"><span class="livebuild__check">✓</span> Building UI components…</div>
+                <div class="livebuild__build-row"><span class="livebuild__check">✓</span> Adding categories &amp; quantity logic…</div>
+                <div class="livebuild__build-row"><span class="livebuild__check">✓</span> Wiring auth + saved lists…</div>
+                <div class="livebuild__build-row livebuild__build-row--active">
+                  <span class="livebuild__check livebuild__check--spinner"></span> Deploying to production…
+                </div>
+              </div>
+
+              <!-- Phase 3: finished app -->
+              <div class="livebuild__app livebuild__app--finished" data-phase="finished">
+                <div class="groceryapp">
+                  <div class="groceryapp__header">
+                    <div class="groceryapp__logo">🛒</div>
+                    <div>
+                      <div class="groceryapp__title">Grocery Buddy</div>
+                      <div class="groceryapp__sub">5 items · 3 categories</div>
+                    </div>
+                  </div>
+                  <div class="groceryapp__cat">PRODUCE</div>
+                  <div class="groceryapp__item"><span class="groceryapp__check"></span><span>Bananas × 6</span><span class="groceryapp__price">$2.49</span></div>
+                  <div class="groceryapp__item"><span class="groceryapp__check groceryapp__check--done"></span><span class="groceryapp__strike">Spinach</span><span class="groceryapp__price">$3.99</span></div>
+                  <div class="groceryapp__cat">DAIRY</div>
+                  <div class="groceryapp__item"><span class="groceryapp__check"></span><span>Greek yogurt × 2</span><span class="groceryapp__price">$5.98</span></div>
+                  <div class="groceryapp__item"><span class="groceryapp__check"></span><span>Almond milk</span><span class="groceryapp__price">$4.49</span></div>
+                  <div class="groceryapp__cat">PANTRY</div>
+                  <div class="groceryapp__item"><span class="groceryapp__check"></span><span>Olive oil</span><span class="groceryapp__price">$8.99</span></div>
+                  <div class="groceryapp__total">
+                    <span>Total</span><span>$25.94</span>
+                  </div>
+                  <div class="groceryapp__cta">✨ Add with AI</div>
+                  <div class="groceryapp__footer">
+                    <span class="groceryapp__footer-time">3 min 47 sec</span> · from sentence to live app
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <p class="livebuild__caption">
+          ↑ Replays automatically. <strong>This is real.</strong> Not a metaphor, not a mockup of what's coming — this
+          is a working app being built right now, by typing one sentence.
+        </p>
 
         <div class="explainer__analogy">
           <div class="explainer__analogy-quote">"</div>
           <p>
-            Think of it like having a senior software engineer on call 24/7, who works for $20/month, never sleeps,
-            never quits, builds whatever you describe, and refactors it the second you change your mind. <strong>That's
-            vibe coding.</strong> That's been impossible for the entire history of the internet — until 18 months ago.
+            It's like having a senior software engineer on call 24/7, who works for $20/month, never sleeps, never
+            quits, builds whatever you describe, and refactors it the second you change your mind. <strong>That's
+            it. That's what graduation actually means.</strong>
           </p>
         </div>
       </div>
@@ -646,8 +715,32 @@
             <p style="margin-top: var(--space-10);">
               <strong>Here's why I'm telling you this.</strong> The version of me who built that company in 2016 needed
               this Blueprint and didn't have it. He would've saved $672,000 and seven years of his life. He couldn't
-              have it then. <em>You</em> can have it now. And I genuinely cannot believe more people aren't doing it.
+              have it then. <em>You</em> can have it now.
             </p>
+
+            <div class="story__closer">
+              <p>
+                This is an opportunity that has <em>truly never existed before.</em> You now have the chance to take
+                knowledge, passion, or even just a deep interest in something — and turn it into a real software
+                product or app. And the kicker:
+              </p>
+              <p class="story__closer-punch">
+                Tools sell <em>way</em> better, and <em>way</em> more often, than information ever has.
+              </p>
+              <p>
+                Trust me. <strong>I've done both for over a decade.</strong> Information products built me a career.
+                Tools built me an exit, three software apps, and the dashboard you saw above.
+              </p>
+              <p class="story__closer-stamp">
+                This opportunity is the great separator. It's the greatest playing-field leveler I've seen in
+                <em>over a decade</em> — and most people I know who failed at digital products before will end up
+                being the ones who win at this.
+              </p>
+              <p class="story__closer-final">
+                Because for the first time, the only thing standing between an idea and a profitable software product
+                is one person willing to type a sentence.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -667,81 +760,159 @@
           </p>
         </div>
 
-        <div class="modules__list">
-          <article class="module">
-            <div class="module__head">
-              <div>
-                <div class="module__num">Step 01</div>
+        <div class="modules__list modules__list--rich">
+          <!-- ===== STEP 01 ===== -->
+          <article class="module module--rich">
+            <div class="module__split">
+              <div class="module__copy">
+                <div class="module__num">— Step 01 of 3</div>
                 <h3 class="module__title">Discover Your <em>Million-Dollar Idea</em></h3>
                 <p class="module__desc">
                   How creators who win at this find ideas you actually want to build — for an audience that actually
                   wants to buy.
                 </p>
+                <ul class="module__items" role="list">
+                  <li><span><strong>The Five Origins</strong> — how every non-technical founder I've studied discovered their winning idea.</span></li>
+                  <li><span><strong>The Audience-Match Test</strong> — make sure the tool is something your people will actually pay for.</span></li>
+                  <li><span><strong>The Daily Extraction Protocol</strong> — pull product ideas from your existing content, group chats, and DMs.</span></li>
+                  <li><span><strong>The Moat Map</strong> — make your idea defensible so the next person to see your Stripe screenshot can't clone you.</span></li>
+                  <li><span><strong>The Launch Outline</strong> — the one-page MVP scope doc that stops you from over-building.</span></li>
+                </ul>
+              </div>
+              <div class="module__visual" aria-hidden="true">
+                <div class="vault">
+                  <div class="vault__head">
+                    <span class="vault__icon">💡</span>
+                    <div>
+                      <div class="vault__title">Idea Vault</div>
+                      <div class="vault__sub">Surfacing your Top 5 ideas…</div>
+                    </div>
+                    <div class="vault__progress">5/5</div>
+                  </div>
+                  <div class="vault__row vault__row--top">
+                    <span class="vault__rank">01</span>
+                    <div class="vault__name">Macro tracker for CrossFit athletes</div>
+                    <div class="vault__score">94</div>
+                  </div>
+                  <div class="vault__row">
+                    <span class="vault__rank">02</span>
+                    <div class="vault__name">Couples weekly check-in app</div>
+                    <div class="vault__score">87</div>
+                  </div>
+                  <div class="vault__row">
+                    <span class="vault__rank">03</span>
+                    <div class="vault__name">Sourdough hydration calculator</div>
+                    <div class="vault__score">81</div>
+                  </div>
+                  <div class="vault__row vault__row--dim">
+                    <span class="vault__rank">04</span>
+                    <div class="vault__name">Lead-scoring tool for agents</div>
+                    <div class="vault__score">76</div>
+                  </div>
+                  <div class="vault__row vault__row--dim">
+                    <span class="vault__rank">05</span>
+                    <div class="vault__name">Tax-loss harvesting calculator</div>
+                    <div class="vault__score">71</div>
+                  </div>
+                  <div class="vault__legend">Match score · 100 = bullseye for your audience</div>
+                </div>
               </div>
             </div>
-            <ul class="module__items" role="list">
-              <li><span><strong>The Five Origins</strong> — how every successful non-technical founder discovered their winning idea (and how to do it for yourself).</span></li>
-              <li><span><strong>The Audience-Match Test</strong> — make sure the tool you want to build is one your audience will actually pay for.</span></li>
-              <li><span><strong>The Daily Extraction Protocol</strong> — pull product ideas from your existing content, group chats, and DMs.</span></li>
-              <li><span><strong>The Moat Map</strong> — make your idea defensible so the next person who sees your Stripe screenshot can't just clone you.</span></li>
-              <li><span><strong>The Launch Outline</strong> — the one-page MVP scope doc that keeps you from over-building.</span></li>
-            </ul>
           </article>
 
-          <article class="module">
-            <div class="module__head">
-              <div>
-                <div class="module__num">Step 02</div>
+          <!-- ===== STEP 02 ===== -->
+          <article class="module module--rich">
+            <div class="module__split module__split--reverse">
+              <div class="module__copy">
+                <div class="module__num">— Step 02 of 3</div>
                 <h3 class="module__title">Build It With AI <em>In One Weekend</em></h3>
                 <p class="module__desc">
-                  The exact tools, the exact prompts, the exact order — for someone with zero technical background.
+                  The exact tools. The exact prompts. The exact order. Built for someone who's never written a line
+                  of code.
                 </p>
+                <ul class="module__items" role="list">
+                  <li><span><strong>The Toolkit</strong> — the exact 4 tools you need (and the ones to skip). Setup in 20 minutes.</span></li>
+                  <li><span><strong>Master Prompt Engineering</strong> — how to talk to AI so it builds what you actually want. The skill nobody teaches.</span></li>
+                  <li><span><strong>The Core 7 Elements</strong> — the seven non-negotiable blocks every real software product needs, with a copy-paste prompt for each.</span></li>
+                  <li><span><strong>The Pricing &amp; Margin Lab</strong> — how to price for profit on day one. Most beginners get this catastrophically wrong.</span></li>
+                </ul>
+              </div>
+              <div class="module__visual" aria-hidden="true">
+                <div class="core7card">
+                  <div class="core7card__head">
+                    <span class="core7card__pill">THE CORE 7</span>
+                    <span class="core7card__count">7 / 7 prompts ready</span>
+                  </div>
+                  <div class="core7card__grid">
+                    <div class="core7card__cell"><span>01</span>Admin Panel</div>
+                    <div class="core7card__cell"><span>02</span>Data Viz</div>
+                    <div class="core7card__cell"><span>03</span>Security</div>
+                    <div class="core7card__cell"><span>04</span>Database</div>
+                    <div class="core7card__cell"><span>05</span>Referrals</div>
+                    <div class="core7card__cell"><span>06</span>Knowledge Brain</div>
+                    <div class="core7card__cell core7card__cell--wide"><span>07</span>AI Employees</div>
+                  </div>
+                  <div class="core7card__chip">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>
+                    Each block has a tested prompt that just works
+                  </div>
+                </div>
               </div>
             </div>
-            <ul class="module__items" role="list">
-              <li><span><strong>The Toolkit</strong> — the exact 4 tools you need and the ones to skip. Setup is under 20 minutes.</span></li>
-              <li><span><strong>Master Prompt Engineering</strong> — how to talk to AI so it builds what you actually want. This is the skill nobody teaches.</span></li>
-              <li><span><strong>The Core 7 Elements</strong> — the seven essential building blocks every real software product needs (admin panel, security, database, referral system, etc.) — each with a copy-paste prompt:</span></li>
-            </ul>
-            <div class="core7">
-              <div class="core7__title">The Core 7</div>
-              <ul class="core7__grid" role="list">
-                <li><span>01</span>Admin Panel</li>
-                <li><span>02</span>Data Viz</li>
-                <li><span>03</span>Security</li>
-                <li><span>04</span>Database</li>
-                <li><span>05</span>Referral System</li>
-                <li><span>06</span>Knowledge Brain</li>
-                <li><span>07</span>AI Employees</li>
-              </ul>
-            </div>
-            <ul class="module__items" style="margin-top: var(--space-5)" role="list">
-              <li><span><strong>The Pricing & Margin Lab</strong> — how to price for profit on day one (most beginners get this catastrophically wrong).</span></li>
-            </ul>
           </article>
 
-          <article class="module">
-            <div class="module__head">
-              <div>
-                <div class="module__num">Step 03</div>
+          <!-- ===== STEP 03 ===== -->
+          <article class="module module--rich">
+            <div class="module__split">
+              <div class="module__copy">
+                <div class="module__num">— Step 03 of 3</div>
                 <h3 class="module__title">Your First <em>500 Customers</em> — For Free</h3>
                 <p class="module__desc">
-                  The part nobody else teaches. Built, but nobody came? Not on my watch.
+                  Built, but nobody came? Not on my watch. The part nobody else teaches — because nobody else has
+                  done it 22,000 times.
+                </p>
+                <ul class="module__items" role="list">
+                  <li><span><strong>The Founders' Launch Method</strong> — the $40,000-in-7-days playbook I personally use for every new product.</span></li>
+                  <li><span><strong>TikTok Organic</strong> — the algorithm that doesn't care if you have followers.</span></li>
+                  <li><span><strong>Instagram Reels Organic</strong> — the playbook the gurus stopped teaching when it actually started working.</span></li>
+                  <li><span><strong>SEO in 2026</strong> — why “SEO is dead” is the dumbest take on the internet right now.</span></li>
+                  <li><span><strong>YouTube Organic + Influencer Outreach</strong> — plus the cold-DM script I've personally sent 4,000+ times.</span></li>
+                  <li><span><strong>Meta + TikTok Influencer Plays</strong> — partnership flows that get you on someone else's audience for $0 upfront.</span></li>
+                  <li><span style="color: var(--color-text-faint); font-style: italic">…and 8 more channels broken down step by step.</span></li>
+                </ul>
+                <p class="module__pull">
+                  By the end of Step 3, you have a path to your first 500 paying users — without a single dollar in ads.
                 </p>
               </div>
+              <div class="module__visual" aria-hidden="true">
+                <div class="channels">
+                  <div class="channels__head">
+                    <span>10 free distribution channels</span>
+                    <span class="channels__count">15 sub-modules</span>
+                  </div>
+                  <div class="channels__grid">
+                    <div class="channels__chip">TikTok Organic</div>
+                    <div class="channels__chip">IG Reels</div>
+                    <div class="channels__chip">YouTube Long-form</div>
+                    <div class="channels__chip">SEO 2026</div>
+                    <div class="channels__chip">YT Influencer DM</div>
+                    <div class="channels__chip">Meta Influencer</div>
+                    <div class="channels__chip">TT Influencer</div>
+                    <div class="channels__chip">Twitter Threads</div>
+                    <div class="channels__chip">LinkedIn Build-in-Public</div>
+                    <div class="channels__chip">Newsletter Swap</div>
+                  </div>
+                  <div class="channels__line">
+                    <span>Founders' Launch — 7 days</span>
+                    <span class="channels__money">$40,000</span>
+                  </div>
+                  <div class="channels__bar">
+                    <div class="channels__bar-fill"></div>
+                  </div>
+                  <div class="channels__legend">My personal launch playbook — included</div>
+                </div>
+              </div>
             </div>
-            <ul class="module__items" role="list">
-              <li><span><strong>The Founders' Launch Method</strong> — the $40,000-in-7-days playbook I personally use for every new product I roll out.</span></li>
-              <li><span><strong>TikTok Organic</strong> — the algorithm that doesn't care if you have followers.</span></li>
-              <li><span><strong>Instagram Reels Organic</strong> — the playbook the gurus stopped teaching when it actually started working.</span></li>
-              <li><span><strong>SEO in 2026</strong> — why "SEO is dead" is the dumbest take on the internet right now.</span></li>
-              <li><span><strong>YouTube Organic + Influencer Outreach</strong> — long-form is back. Plus the cold-DM script I've personally sent 4,000+ times.</span></li>
-              <li><span><strong>Meta + TikTok Influencer Plays</strong> — partnership flows that get you on someone else's audience for $0 upfront.</span></li>
-              <li><span style="color: var(--color-text-faint); font-style: italic">…and 8 more channels broken down step by step.</span></li>
-            </ul>
-            <p style="margin-top: var(--space-6); font-family: var(--font-display); font-style: italic; font-size: var(--text-lg); color: var(--color-text);">
-              By the end of Step 3, you have a path to your first 500 paying users without a single dollar in ads.
-            </p>
           </article>
         </div>
       </div>
@@ -823,7 +994,7 @@
           <div class="pricing__header">
             <div class="pricing__name">
               <span class="pricing__name-tag">Founders Pricing</span>
-              The Vibe Coding Blueprint
+              The PaidCreators Blueprint
             </div>
             <h3 class="pricing__title">Everything you need to build, ship & sell.</h3>
             <div class="pricing__price">
@@ -1053,6 +1224,84 @@
     </footer>
 
     <script>
+      // ============================================================
+      // LIVE BUILD ANIMATION — typing + phase transitions
+      // Runs on a loop. Triggers from IntersectionObserver so it
+      // only animates when the user is actually looking at it.
+      // ============================================================
+      (function () {
+        const livebuild = document.querySelector('.livebuild');
+        if (!livebuild) return;
+        if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          // Skip directly to finished state
+          livebuild.setAttribute('data-state', 'finished');
+          const typed = livebuild.querySelector('.livebuild__typed');
+          if (typed) typed.textContent = 'build me an app that helps people manage their grocery list';
+          const status = livebuild.querySelector('.livebuild__status-text');
+          if (status) status.textContent = 'Done.';
+          return;
+        }
+
+        const PROMPT = 'build me an app that helps people manage their grocery list';
+        const typedEl = livebuild.querySelector('.livebuild__typed');
+        const statusEl = livebuild.querySelector('.livebuild__status-text');
+        const statusDot = livebuild.querySelector('.livebuild__status-dot');
+
+        let running = false;
+        let killed = false;
+
+        function wait(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+        async function runLoop() {
+          while (!killed) {
+            // RESET
+            livebuild.setAttribute('data-state', 'idle');
+            if (typedEl) typedEl.textContent = '';
+            if (statusEl) statusEl.textContent = 'Idle…';
+            if (statusDot) statusDot.style.background = 'var(--color-text-faint)';
+            await wait(900);
+
+            // TYPING
+            livebuild.setAttribute('data-state', 'typing');
+            if (statusEl) statusEl.textContent = 'Typing…';
+            if (statusDot) statusDot.style.background = 'var(--color-warning)';
+            for (let i = 1; i <= PROMPT.length; i++) {
+              if (killed) return;
+              if (typedEl) typedEl.textContent = PROMPT.slice(0, i);
+              // Variable typing rhythm so it doesn't feel robotic
+              await wait(28 + Math.random() * 50);
+            }
+            await wait(700);
+
+            // SUBMITTED
+            if (statusEl) statusEl.textContent = 'Submitted → building app…';
+            if (statusDot) statusDot.style.background = 'var(--color-primary)';
+            livebuild.setAttribute('data-state', 'building');
+            await wait(3200);
+
+            // DONE
+            if (statusEl) statusEl.textContent = 'Done. App is live.';
+            livebuild.setAttribute('data-state', 'finished');
+            await wait(5500); // hold the finished state long enough to read
+          }
+        }
+
+        // Trigger when scrolled into view; pause when not
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach(e => {
+            if (e.isIntersecting && !running) {
+              running = true;
+              killed = false;
+              runLoop();
+            } else if (!e.isIntersecting && running) {
+              killed = true;
+              running = false;
+            }
+          });
+        }, { threshold: 0.2 });
+        io.observe(livebuild);
+      })();
+
       // Theme toggle
       (function () {
         const t = document.querySelector('[data-theme-toggle]');
